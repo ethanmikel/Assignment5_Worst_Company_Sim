@@ -189,11 +189,11 @@ class TemporaryEmployee(Employee):
                     self.performance >= TEMP_EMPLOYEE_PERFORMANCE_THRESHOLD:
                 self.savings += MANAGER_BONUS
             else:
-                if self.salary == 0:
-                    self.is_employed = False
                 self.salary //= 2
                 self.happiness -= 5
-
+                if self.salary == 0:
+                    self.is_employed = False
+                
 class PermanentEmployee(Employee):
     """
     A subclass of Employee representing a permanent employee.
