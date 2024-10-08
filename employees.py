@@ -193,7 +193,7 @@ class TemporaryEmployee(Employee):
                 self.happiness -= 5
                 if self.salary == 0:
                     self.is_employed = False
-   
+
 class PermanentEmployee(Employee):
     """
     A subclass of Employee representing a permanent employee.
